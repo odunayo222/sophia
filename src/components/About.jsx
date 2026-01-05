@@ -14,39 +14,51 @@ export default function About() {
       title: "Clear & Structured Systems",
       description:
         "Clients work with rule-based frameworks that remove guesswork and emotional decision-making.",
-    }
+    },
   ];
 
   return (
-    <section className="bg-white px-10 md:px-20 py-24 scroll-mt-28" id="about">
-      <div className="grid md:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
+    <section
+      className="bg-white px-6 md:px-20 py-24 scroll-mt-28"
+      id="about"
+    >
+      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start max-w-7xl mx-auto">
         
         {/* LEFT — ABOUT TEXT */}
         <div>
-          <p className="text-emerald-600 font-medium mb-2">Who I Am</p>
+          <p className="text-emerald-600 font-medium mb-2">
+            Who I Am
+          </p>
 
           <h2 className="text-4xl font-bold text-slate-900 mb-6">
-            About Me <span className="text-slate-400 text-lg">(she/her)</span>
+            About Me{" "}
+            <span className="text-slate-400 text-lg">(she/her)</span>
           </h2>
 
-          <p className="text-slate-600 leading-relaxed mb-6 text-justify">
-            Hi, I’m <span className="font-medium text-slate-800">Sophia Lawson</span>, 
-            a professional forex trader and business strategist with over 10 years 
-            of experience in global financial markets. My work sits at the intersection 
-            of currency trading, risk management, and strategic business growth.
+          <p className="text-slate-600 leading-7 md:leading-relaxed mb-6 text-left md:text-justify">
+            Hi, I’m{" "}
+            <span className="font-medium text-slate-800">
+              Sophia Lawson
+            </span>
+            , a professional forex trader and business strategist with over
+            10 years of experience in global financial markets. My work
+            sits at the intersection of currency trading, risk management,
+            and strategic business growth.
           </p>
 
-          <p className="text-slate-600 leading-relaxed mb-6 text-justify">
-            For me, trading isn’t about gambling or shortcuts — it’s about structure, 
-            probability, and disciplined execution. I help clients understand market 
-            behavior, protect capital, and grow consistently using proven forex 
-            strategies tailored to their goals and risk tolerance.
+          <p className="text-slate-600 leading-7 md:leading-relaxed mb-6 text-left md:text-justify">
+            For me, trading isn’t about gambling or shortcuts — it’s about
+            structure, probability, and disciplined execution. I help
+            clients understand market behavior, protect capital, and grow
+            consistently using proven forex strategies tailored to their
+            goals and risk tolerance.
           </p>
 
-          <p className="text-slate-600 leading-relaxed">
-            Beyond trading, I advise entrepreneurs and investors on how to integrate 
-            forex into broader business and wealth strategies, ensuring financial 
-            decisions are aligned with long-term sustainability — not short-term hype.
+          <p className="text-slate-600 leading-7 md:leading-relaxed text-left md:text-justify">
+            Beyond trading, I advise entrepreneurs and investors on how to
+            integrate forex into broader business and wealth strategies,
+            ensuring financial decisions are aligned with long-term
+            sustainability — not short-term hype.
           </p>
         </div>
 
@@ -64,9 +76,9 @@ export default function About() {
             {trustReasons.map((item, index) => (
               <div
                 key={index}
-                className="bg-slate-50 rounded-2xl p-6 border border-slate-100 
-shadow-sm hover:shadow-md hover:-translate-y-1 
-transition-all duration-300"
+                className="bg-slate-50 rounded-2xl p-6 border border-slate-100
+                shadow-sm hover:shadow-md hover:-translate-y-1
+                transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <span className="w-2 h-2 mt-2 rounded-full bg-emerald-500" />
